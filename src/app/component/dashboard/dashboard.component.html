@@ -1,0 +1,106 @@
+<div class="container-fluid bg-light">
+  <div class="container d-flex justify-content-center" style="width: 700px">
+    <div class="shadow bg-light mt-4" style="width: 100%">
+      <div class="card m-4" style="background-color: lightblue">
+        <h4 class="p-2" style="color: white">My TODO List</h4>
+      </div>
+
+      <div class="shadow py-2 ms-4" style="width: 625px">
+        <div class="mx-4 input-group" style="width: 92.5%">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="enter task"
+            name="task"
+            [(ngModel)]="addTaskValue"
+          />
+          <button
+            type="button"
+            class="btn btn-outline-success"
+            (click)="addTask()"
+          >
+            +
+          </button>
+        </div>
+      </div>
+
+      <h3 class="text-primary mt-4 ms-4">Tasks:</h3>
+      <div
+        class="shadow py-2 ms-4 mb-4"
+        style="width: 625px"
+        *ngFor="let task of taskArr"
+      >
+        <div class="mx-4 input-group" style="width: 92.5%">
+          <h5 class="pb-1 pt-2 ps-2" style="width: 485px">
+            {{ task.taskName }}
+          </h5>
+          <button
+            type="button"
+            class="btn btn-outline-primary me-2"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            (click)="setTask(task)"
+          >
+            edit
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-danger"
+            (click)="deleteTask(task)"
+          >
+            x
+          </button>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Task</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Type new task name"
+                name="editTask"
+                [(ngModel)]="editTaskValue"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                (click)="editTask()"
+                data-bs-dismiss="modal"
+              >
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
