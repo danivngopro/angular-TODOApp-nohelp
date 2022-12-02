@@ -46,7 +46,7 @@
 
 ## :dart: About ##
 
-Describe your project
+A basic todo app in angular
 
 ## :sparkles: Features ##
 
