@@ -1,12 +1,12 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Test Todoa Pp" />
+  <img src="./.github/app.gif" alt="Test Todo App" />
 
   &#xa0;
 
   <!-- <a href="https://testtodoapp.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Test Todoa Pp</h1>
+<h1 align="center">Test Todo App</h1>
 
 <p align="center">
   <img alt="Github top language" src="https://img.shields.io/github/languages/top/{{YOUR_GITHUB_USERNAME}}/test-todoa-pp?color=56BEB8">
@@ -86,13 +86,9 @@ $ yarn start
 # The server will initialize in the <http://localhost:3000>
 ```
 
-## :memo: License ##
+# images: 
+![image](https://user-images.githubusercontent.com/44786079/205320125-e85d804f-143e-43df-a131-bcd3a92b036c.png)
+![image](https://user-images.githubusercontent.com/44786079/205320270-b7231cad-9e84-442d-8541-971e65a717b2.png)
 
-This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
-
-
-Made with :heart: by <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">{{YOUR_NAME}}</a>
-
-&#xa0;
 
 <a href="#top">Back to top</a>
