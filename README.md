@@ -50,9 +50,9 @@ Describe your project
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: adding tasks\
+:heavy_check_mark: removing tasks;\
+:heavy_check_mark: updating tasks;
 
 ## :rocket: Technologies ##
 
@@ -78,10 +78,10 @@ $ git clone https://github.com/{{YOUR_GITHUB_USERNAME}}/test-todoa-pp
 $ cd test-todoa-pp
 
 # Install dependencies
-$ yarn
+$ npm i
 
 # Run the project
-$ yarn start
+$ npm start
 
 # The server will initialize in the <http://localhost:3000>
 ```
